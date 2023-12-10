@@ -1,0 +1,159 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[default]{lato}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    allcolors=black
+}
+
+\pagestyle{empty}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+{\setlength{\leftmargin}{#1}}%
+     \item[]
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+{\setlength{\leftmargin}{-0.5#1}}%
+\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+#1 &
+#2 \\
+\end{tabular*}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+	{\Large \textbf{Jochen Stierberger}}\\
+	Chicago, Illinois
+	\vspace{0.05cm}
+	\\
+	(626) 709-0712 \hfill
+	\href{mailto:jochen@stierberger.com}{jochen@stierberger.com} \hfill
+	\href{https://github.com/strbrgr}{github.com/strbrgr} \hfill
+	\href{https://linkedin.com/in/strbrgr}{linkedin.com/in/strbrgr}
+\end{center}
+\vspace{1em} % Add space of 1em between sections
+%
+%----------------------------------------------------------------------------------------
+% Work Experience
+%----------------------------------------------------------------------------------------
+%
+\hrule
+\vspace{-1em}
+\subsection*{\Large Experience}
+
+\renewcommand\labelitemi{}
+\renewcommand\labelitemii{$\bullet$}
+\begin{itemize}[leftmargin=1em]
+	\parskip=0.1em
+
+
+  \item
+	      \headerrow
+	      {\textbf{nvisia}}
+	      {\textbf{Chicago, IL}}
+	      \headerrow
+	      {\emph{Software Engineer}}
+	      {\emph{Nov 2023 -- Present}}
+	      \begin{itemize*}
+	      	\item Stood up innovative IoT enterprise application within 6 months for numerous Fortune 500 companies to enhance operational uptime.
+          \item Innovated real-time data visualization by introducing diverse graph components (e.g., line and bar charts) to our team, pioneering dynamic insights and empowering customers to optimize cost efficiency.
+	      	\item Leveraged creative background to enhance UX and UI, resulting in a more aesthetically pleasing and user-friendly experience.
+	      \end{itemize*}
+	      \headerrow
+	      {\emph{Software Developer}}
+	      {\emph{Oct 2022 -- Nov 2023}}
+	      \begin{itemize*}
+          \item Initiated and executed the development of an internal tool that automated a labor-intensive manual process, thereby elevating the developer experience and delivering notable cost and effort savings.
+          \item Improved component load speed by 2x by fixing API request attributes, eliminating unnecessary data retrieval. Overcame integration challenges within a larger refactor and reduced payload by 10-20kb for enhanced system efficiency.
+          \item Quickly adapted to a new, opinionated framework, making significant contributions within the first week. Implemented impactful changes to the sidebar layout, showcasing adaptability and enhancing project aesthetics and functionality.
+          \item Played a pivotal role in the development of multiple applications, facilitating communication among over 10 business stakeholders.
+	      \end{itemize*}
+		
+	\item
+	      \headerrow
+	      {\textbf{100Devs}}
+	      {\textbf{remote}}
+	      \headerrow
+	      {\emph{Software Engineer}}
+	      {\emph{Jan 2022 -- Oct 2022}}
+	      \begin{itemize*}
+	      	\item Collaborated closely with designers to ensure seamless integration of design elements into app platforms.
+	      	\item Presented and implemented valuable tradeoff suggestions to business stakeholders, contributing to informed decision-making processes.
+	      	\item Developed applications tailored for small local businesses.
+	      \end{itemize*}
+	      	      
+	\item
+	      \headerrow
+	      {\textbf{The Field Museum}}
+	      {\textbf{Chicago, IL}}
+	      \headerrow
+	      {\emph{Studio Manager}}
+	      {\emph{Jun 2021 -- Jan 2022}}
+	      \begin{itemize*}
+	      	\item Produced high-magnification photographs and 3D models to advance fossil preparation techniques and conducted specimen research.
+	      	\item Developed marketing assets across various media channels.
+	      \end{itemize*}
+	      	      
+\end{itemize}
+\vspace{1em} % Add space of 1em between sections
+%
+%----------------------------------------------------------------------------------------
+% Skills
+%----------------------------------------------------------------------------------------
+%
+\hrule
+\vspace{-1em}
+\subsection*{\Large Skills}
+
+\hyphenpenalty=1000
+\begin{itemize}[leftmargin=1em,noitemsep]
+	\item \textbf{Programming Languages:}
+	      JavaScript, TypeScript, HTML, CSS, Swift
+	\item \textbf{Technologies:}
+	      React, Next.js, Tailwind CSS, Azure DevOps, ESLint
+\end{itemize}
+\vspace{1em} % Add space of 1em between sections
+%
+%----------------------------------------------------------------------------------------
+% Education
+%----------------------------------------------------------------------------------------
+%
+\hrule
+\vspace{-1em}
+\subsection*{\Large Education}
+
+\begin{itemize}[leftmargin=1em]
+	\parskip=0.1em
+		
+	\item
+	      \headerrow
+	      {\textbf{University of Art and Design}}
+	      {\textbf{Offenbach, Germany}}
+	      \headerrow
+	      {\emph{MFA Design}}
+	      {\emph{2019}}
+	      
+	      	      
+\end{itemize}
+
+\end{document}
